@@ -121,6 +121,9 @@ EG:
       master
 
 
+To merge (add the changes you made on your branch to a different one):
+$ git merge <branch-name>
+    (branch you want your current one to merge into)
 
 
 
