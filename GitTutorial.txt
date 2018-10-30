@@ -10,6 +10,10 @@ Show us the difference between our repository and the one in the "cloud"
 Add Changes:
 $ git add <file> 
     (file name added)
+$ git add .
+    (adds everything in the directory)
+$ git add -A
+    (adds all)        
 
 EG:
     $ git add index.html     
@@ -65,6 +69,27 @@ EG:
     Total 4 (delta 0), reused 0 (delta 0)
     To https://github.com/nicocra/newGitTest.git
        a1fd2e6..920dc1d  master -> master
+
+To pull from the "cloud":
+$ git pull
+
+EG:
+    MacBook-Air-de-123Seguro:newGitTest 123seguro$ git pull
+    remote: Enumerating objects: 5, done.
+    remote: Counting objects: 100% (5/5), done.
+    remote: Compressing objects: 100% (2/2), done.
+    remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+    Unpacking objects: 100% (3/3), done.
+    From https://github.com/nicocra/newGitTest
+       48970d5..b3e2986  master     -> origin/master
+    Updating 48970d5..b3e2986
+    Fast-forward
+     README.md | 5 ++++-
+     1 file changed, 4 insertions(+), 1 deletion(-)
+
+* if you use "git commit" with no comment, you end up in a weird screen.
+To exit:
+'esc'(key) :wq
 
 
 
