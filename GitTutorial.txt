@@ -10,7 +10,8 @@ Show us the difference between our repository and the one in the "cloud"
 Add Changes:
 $ git add <file> 
     (file name added)
-eg:
+
+EG:
     $ git add index.html     
 
 
@@ -38,4 +39,33 @@ EG:
         new file:   GitTutorial.txt
         new file:   index.html
 
-    MacBook-Air-de-123Seguro:newGitTest 123seguro$ 
+
+
+To commit (still on my machine):
+$ git commit -m "<message>"
+    (message that i want to add with the commit) 
+
+EG:
+    MacBook-Air-de-123Seguro:newGitTest 123seguro$ git commit -m "added index.html and GitTutorial.txt"
+    [master 920dc1d] added index.html and GitTutorial.txt
+     2 files changed, 54 insertions(+)
+     create mode 100644 GitTutorial.txt
+     create mode 100644 index.html
+
+
+To push to the "cloud":
+$ git push
+
+EG:
+    MacBook-Air-de-123Seguro:newGitTest 123seguro$ git push
+    Counting objects: 4, done.
+    Delta compression using up to 4 threads.
+    Compressing objects: 100% (4/4), done.
+    Writing objects: 100% (4/4), 862 bytes | 862.00 KiB/s, done.
+    Total 4 (delta 0), reused 0 (delta 0)
+    To https://github.com/nicocra/newGitTest.git
+       a1fd2e6..920dc1d  master -> master
+
+
+
+
