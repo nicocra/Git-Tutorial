@@ -93,4 +93,34 @@ To exit:
 
 
 
+To see branches:
+$ git branch
+
+To create new branch coping the actual branch you are on:
+$ git branch <branch-name>
+    (name of the branch you create)
+
+EG:
+    MacBook-Air-de-123Seguro:newGitTest 123seguro$ git branch
+    * master
+    MacBook-Air-de-123Seguro:newGitTest 123seguro$ git branch feature1
+    MacBook-Air-de-123Seguro:newGitTest 123seguro$ git branch
+      feature1
+    * master
+
+
+To switch to a different branch:
+$ git checkout <branch-name>
+
+EG:
+    MacBook-Air-de-123Seguro:newGitTest 123seguro$ git checkout feature1
+    M   GitTutorial.txt
+    Switched to branch 'feature1'
+    MacBook-Air-de-123Seguro:newGitTest 123seguro$ git branch
+    * feature1
+      master
+
+
+
+
 
